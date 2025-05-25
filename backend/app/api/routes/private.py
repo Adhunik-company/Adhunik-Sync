@@ -3,7 +3,7 @@ from typing import Any
 from fastapi import APIRouter
 from pydantic import BaseModel
 
-from app.api.deps import SessionDep
+from app.api.deps.auth import SessionDep
 from app.core.security import get_password_hash
 from app.models import (
     User,
